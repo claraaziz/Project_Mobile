@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_home.xml" value="0.13148148148148148" />
+=======
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/rounded_corner_view.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/rounded_corner_view2.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_classes.xml" value="0.25" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_home.xml" value="0.136" />
+>>>>>>> 152e4efafa15c97c3b1b32008f1b98da62299d2f
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
