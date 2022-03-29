@@ -135,6 +135,7 @@ helps lower blood pressure and cholesterol levels. Two major risk factors for he
             android:textStyle="bold"
             android:layout_marginEnd="10dp"
             android:id="@+id/scheduleclass"
+            android:onClick="schedule"
             />
         <Button
             android:layout_width="wrap_content"
