@@ -6,3 +6,5 @@
 ![Screenshot_20220331-031607_Project Mobile](https://user-images.githubusercontent.com/61804184/160957316-c225aa44-eb97-4857-908d-45109e98aa38.jpg)
 ![Register](https://user-images.githubusercontent.com/74839358/161083349-225f38ab-3511-4f6a-b766-202cea07ab25.png)
 ![Profile](https://user-images.githubusercontent.com/74839358/161083356-b6a8b310-e8d1-40e9-83ac-80ade69f7d2d.png)
+![screenshot1](https://user-images.githubusercontent.com/76594918/161088229-44eeb19d-74b4-423a-8ad9-4d8ffa3d4a8c.jpeg)
+![screenshot2](https://user-images.githubusercontent.com/76594918/161088262-ffcb669c-9099-4cc6-a52e-5e9e52eb071a.jpeg)
