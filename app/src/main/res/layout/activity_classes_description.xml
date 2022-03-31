@@ -14,7 +14,7 @@
         android:layout_marginTop="30dp"
         android:text="Classes"
         android:textAlignment="center"
-        android:textColor="#2196F3"
+        android:textColor="@color/blue"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

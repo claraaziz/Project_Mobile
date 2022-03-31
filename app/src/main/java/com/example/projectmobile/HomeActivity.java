@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void launchClassesActivity(View view) {
-        Intent classesIntent = new Intent(this, Classes.class);
+        Intent classesIntent = new Intent(this, scheduleClasses.class);
         startActivity(classesIntent);
     }
 
