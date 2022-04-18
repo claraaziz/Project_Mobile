@@ -1,8 +1,10 @@
-package com.example.project;
+package com.example.projectmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.projectmobile.R;
 
 public class classesDescription extends AppCompatActivity {
 
