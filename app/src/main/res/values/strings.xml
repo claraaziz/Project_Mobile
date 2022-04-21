@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Project Mobile</string>
+    <string name="cardio"><a href="https://www.youtube.com/watch?v=EDD4GxHVess">Cardio</a></string>
+    <string name="strength"><a href="https://www.youtube.com/watch?v=7DaE7pi5wfg">Strength</a></string>
+    <string name="flexibility"><a href="https://www.youtube.com/watch?v=Ef6LwAaB3_E">Flexibility</a></string>
 </resources>

@@ -56,8 +56,9 @@
             android:background="#d6d6d6"
             android:gravity="center_vertical"
             android:paddingStart="15dp"
-            android:text="Cardio"
+            android:text="@string/cardio"
             android:textColor="@color/black"
+            android:textColorLink="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
@@ -88,12 +89,14 @@
             android:background="#d6d6d6"
             android:gravity="center_vertical"
             android:paddingStart="15dp"
-            android:text="Strength"
+            android:text="@string/strength"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="@+id/yoga"
             app:layout_constraintStart_toStartOf="@+id/yoga"
-            app:layout_constraintTop_toBottomOf="@+id/yoga" />
+            app:layout_constraintTop_toBottomOf="@+id/yoga"
+            android:textColorLink="@color/black"
+            />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/hiitImg"
@@ -117,12 +120,15 @@
             android:background="#d6d6d6"
             android:gravity="center_vertical"
             android:paddingStart="15dp"
-            android:text="Flexibility"
+            android:text="@string/flexibility"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="@+id/hiit"
             app:layout_constraintStart_toStartOf="@+id/hiit"
-            app:layout_constraintTop_toBottomOf="@+id/hiit" />
+            app:layout_constraintTop_toBottomOf="@+id/hiit"
+            android:textColorLink="@color/black"
+
+            />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/boxImg"
@@ -179,6 +185,39 @@
                 android:layout_marginTop="-3dp"
                 android:src="@drawable/user" />
         </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yoga"
+            app:layout_constraintEnd_toStartOf="@+id/yogaImg"
+            app:layout_constraintStart_toStartOf="@+id/yoga"
+            app:layout_constraintTop_toTopOf="@+id/yoga"
+            app:srcCompat="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/hiit"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintHorizontal_bias="0.958"
+            app:layout_constraintStart_toStartOf="@+id/hiit"
+            app:layout_constraintTop_toTopOf="@+id/hiit"
+            app:srcCompat="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/boxing"
+            app:layout_constraintEnd_toStartOf="@+id/boxImg"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/boxing"
+            app:srcCompat="@drawable/ic_share" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

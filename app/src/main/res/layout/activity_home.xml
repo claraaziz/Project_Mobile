@@ -10,8 +10,7 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60sp"
+        android:layout_height="670dp"
         >
     <LinearLayout
         android:layout_width="wrap_content"
@@ -124,35 +123,50 @@ helps lower blood pressure and cholesterol levels. Two major risk factors for he
                 android:layout_height="match_parent"
                 android:src="@drawable/img3" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="40dp"
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/blue"
-                android:text="SCHEDULE"
-                android:textStyle="bold"
-                android:layout_marginEnd="10dp"
-                android:id="@+id/scheduleclass"
-                android:onClick="launchClassesActivity"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/blue"
-                android:text="WORKOUT"
-                android:textStyle="bold"
-                android:layout_marginStart="10dp"
-                android:id="@+id/homeworkout"
-                android:onClick="launchWorkoutActivity"
-                />
-        </LinearLayout>
     </LinearLayout>
-    </ScrollView>z
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_home"
+            android:backgroundTint="@color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/workout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_workout"
+            android:backgroundTint="@color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_classes"
+            android:backgroundTint="@color/black"
+            />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_user"
+            android:backgroundTint="@color/black"
+            />
+    </LinearLayout>
 </LinearLayout>
