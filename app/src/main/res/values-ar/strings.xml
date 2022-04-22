@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title1">حيث تلتقي</string>
+    <string name="title2">اللياقة بالصحة</string>
+    <string name="desc">الجسم ذو المظهر الجميل والصحي القوي مترابطان - ويمكننا مساعدتك في كليهما.</string>
+    <string name="motivation">ان كنت تقدر ان تحلم به، اذا ستقدر ان تحققه.</string>
+    <string name="facttitle">هل كنت تعلم</string>
+    <string name="fact">تمرين منتظم
+يساعد في خفض ضغط الدم ومستويات الكوليسترول. اثنين من أخطر العوامل الرئيسية لأمراض القلب.</string>
+</resources>
