@@ -11,4 +11,29 @@
     <string name="fact">Regular exercise
 helps lower blood pressure and cholesterol levels. Two major risk factors for heart disease.</string>
     <string name="select_workout">Select Workout</string>
+    <string name="hello">Hello,</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+    <string name="years">years</string>
+    <string name="classes">Scheduled Classes</string>
+    <string name="header">Create your Profile</string>
+    <string name="name">Name</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="image">Upload Image</string>
+    <string name="save">Save</string>
+    <string name="network">Network Type Required:</string>
+    <string name="idle">Device Idle</string>
+    <string name="charging">Charging</string>
+    <string name="scheduleJob">Schedule Job</string>
+    <string name="cancelJobs">Cancel Jobs</string>
+    <string name="none">None </string>
+    <string name="wifi">Wifi </string>
+    <string name="any">Any </string>
+    <string name="requires">Requires:</string>
+    <string name="seekBarLabel">Override Deadline: </string>
+    <string name="notSet">Not Set</string>
 </resources>
