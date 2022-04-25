@@ -3,26 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable-anydpi/ic_profile.xml" value="0.164" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable-anydpi/ic_workout.xml" value="0.164" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/home.xml" value="0.1" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.193" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/rounded_corner_view.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/drawable/rounded_corner_view2.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_classes.xml" value="0.25" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_classes_description.xml" value="0.22777777777777777" />
-        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_home.xml" value="0.152" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_scedule_classes.xml" value="0.2" />
         <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_schedule_classes.xml" value="0.2" />
-        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_workout.xml" value="0.1824074074074074" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/drawable/border1.xml" value="0.1575" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_classes_description.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_home.xml" value="0.264" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_scedule_classes.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_workout.xml" value="0.264" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_workout1.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/PC/Documents/GitHub/Project_Mobile/app/src/main/res/menu/menuitem.xml" value="0.1" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_workout.xml" value="0.2" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/activity_workout1.xml" value="0.176" />
+        <entry key="..\:/Users/Cocca/AndroidStudioProjects/ProjectMobile/app/src/main/res/layout/dialog.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/drawable/home.xml" value="0.2305" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2305" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2305" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_scedule_classes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/activity_workout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/DELL/OneDrive/Documents/GitHub/Project_Mobile/app/src/main/res/layout/dialog.xml" value="0.176" />
       </map>
     </option>
   </component>

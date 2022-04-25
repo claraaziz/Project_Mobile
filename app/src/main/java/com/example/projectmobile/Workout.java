@@ -7,27 +7,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Workout extends AppCompatActivity {
 
-    Button b1, b2, b3;
+    ImageButton b1, b2, b3;
 
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout);
-        b1= findViewById(R.id.imageButton);
-        b2= findViewById(R.id.imageButton2);
-        b3= findViewById(R.id.imageButton3);
+        setContentView(R.layout.activity_workout1);
+        setupHyperlink();
+        b1= findViewById(R.id.share1);
+        b2= findViewById(R.id.share2);
+        b3= findViewById(R.id.share3);
         b1.setOnClickListener(new View.OnClickListener () {
             @Override
             public void onClick(View v){
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
-                String body = "Your body here";
+                String body = "https://www.youtube.com/watch?v=EDD4GxHVess";
                 String sub = "Your Subject";
                 myIntent.putExtra(Intent.EXTRA_SUBJECT,sub);
                 myIntent.putExtra(Intent.EXTRA_TEXT,body);
@@ -39,7 +40,7 @@ public class Workout extends AppCompatActivity {
             public void onClick(View v){
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
-                String body = "Your body here";
+                String body = "https://www.youtube.com/watch?v=7DaE7pi5wfg";
                 String sub = "Your Subject";
                 myIntent.putExtra(Intent.EXTRA_SUBJECT,sub);
                 myIntent.putExtra(Intent.EXTRA_TEXT,body);
@@ -51,7 +52,7 @@ public class Workout extends AppCompatActivity {
             public void onClick(View v){
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
-                String body = "Your body here";
+                String body = "https://www.youtube.com/watch?v=Ef6LwAaB3_E";
                 String sub = "Your Subject";
                 myIntent.putExtra(Intent.EXTRA_SUBJECT,sub);
                 myIntent.putExtra(Intent.EXTRA_TEXT,body);
