@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.os.Handler;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,4 +38,6 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         unregisterReceiver(MyReciever);
     }
+
+
 }

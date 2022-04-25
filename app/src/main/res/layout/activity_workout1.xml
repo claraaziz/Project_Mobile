@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="false"
+    android:paddingStart="0dp"
+    tools:context=".Workout1">
+
+    <TextView
+        android:id="@+id/classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/select_workout"
+        android:textColor="#497cff"
+        android:layout_marginLeft="20dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="235dp" />
+
+    <TextView
+        android:id="@+id/yoga"
+        android:layout_width="330dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="40dp"
+        android:background="#d6d6d6"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="@string/cardio"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classes" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/yogaImg"
+        android:layout_width="110dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/yoga"
+        app:layout_constraintEnd_toEndOf="@+id/yoga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintTop_toTopOf="@+id/yoga"
+        app:layout_constraintVertical_bias="0.571"
+        android:src="@drawable/download" />
+
+    <TextView
+        android:id="@+id/hiit"
+        android:layout_width="330dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="40dp"
+        android:background="#d6d6d6"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="@string/strength"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/yoga"
+        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintTop_toBottomOf="@+id/yoga"
+        android:textColorLink="@color/black"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hiitImg"
+        android:layout_width="110dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hiit"
+        app:layout_constraintEnd_toEndOf="@+id/hiit"
+        app:layout_constraintStart_toStartOf="@+id/hiit"
+        app:layout_constraintTop_toTopOf="@+id/hiit"
+        android:src="@drawable/marathon_training_strength"/>
+
+    <TextView
+        android:id="@+id/boxing"
+        android:layout_width="330dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="40dp"
+        android:background="#d6d6d6"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="@string/flexibility"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/hiit"
+        app:layout_constraintStart_toStartOf="@+id/hiit"
+        app:layout_constraintTop_toBottomOf="@+id/hiit"
+        android:textColorLink="@color/black"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/boxImg"
+        android:layout_width="110dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boxing"
+        app:layout_constraintEnd_toEndOf="@+id/boxing"
+        app:layout_constraintStart_toStartOf="@+id/boxing"
+        app:layout_constraintTop_toTopOf="@+id/boxing"
+        app:layout_constraintVertical_bias="0.333"
+        android:src="@drawable/download__1_" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/yoga"
+        app:layout_constraintEnd_toStartOf="@+id/yogaImg"
+        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintTop_toTopOf="@+id/yoga"
+        app:srcCompat="@drawable/ic_share"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/hiit"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="@+id/hiit"
+        app:layout_constraintTop_toTopOf="@+id/hiit"
+        app:srcCompat="@drawable/ic_share"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/boxing"
+        app:layout_constraintEnd_toStartOf="@+id/boxImg"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/boxing"
+        app:srcCompat="@drawable/ic_share"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="80"
+        android:layout_marginBottom="3dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="20"
+            android:onClick="ongohome"
+            app:srcCompat="@drawable/home__1_"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="ongogym"
+            app:srcCompat="@drawable/dumbell"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="20"
+            android:onClick="ongosession"
+            app:srcCompat="@drawable/karate"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+
+            android:onClick="ongoprofile"
+
+            app:srcCompat="@drawable/ic_profile"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

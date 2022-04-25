@@ -115,52 +115,59 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/img3" />
+
         </LinearLayout>
+
     </LinearLayout>
     </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="8dp"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="20dp"
-        >
+        android:layout_height="wrap_content"
+        android:weightSum="80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
 
-        <ImageButton
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
             android:id="@+id/home"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_home"
-            android:backgroundTint="@color/black"
-            />
 
-        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="20"
+            android:onClick="ongohome"
+            app:srcCompat="@drawable/home"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
             android:id="@+id/workout"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_workout"
-            android:backgroundTint="@color/black"
-            />
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="ongogym"
+            app:srcCompat="@drawable/ic_classes" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/schedule"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_classes"
-            android:backgroundTint="@color/black"
-            />
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
 
-        <ImageButton
+            android:layout_weight="20"
+            android:onClick="ongosession"
+            app:srcCompat="@drawable/karate" />
+
+        <ImageView
             android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_user"
-            android:backgroundTint="@color/black"
-            />
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+
+            android:onClick="ongoprofile"
+
+            app:srcCompat="@drawable/ic_profile" />
     </LinearLayout>
+
 </LinearLayout>

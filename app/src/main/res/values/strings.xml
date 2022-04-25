@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Strength Gym App</string>
-    <string name="cardio" translatable="false"><a href="https://www.youtube.com/watch?v=EDD4GxHVess">Cardio</a></string>
-    <string name="strength" translatable="false"><a href="https://www.youtube.com/watch?v=7DaE7pi5wfg">Strength</a></string>
-    <string name="flexibility" translatable="false"><a href="https://www.youtube.com/watch?v=Ef6LwAaB3_E">Flexibility</a></string>
+    <string name="cardio" ><a href="https://www.youtube.com/watch?v=EDD4GxHVess">Cardio</a></string>
+    <string name="strength"><a href="https://www.youtube.com/watch?v=7DaE7pi5wfg">Strength</a></string>
+    <string name="flexibility" ><a href="https://www.youtube.com/watch?v=Ef6LwAaB3_E">Flexibility</a></string>
     <string name="title1">Where fitness</string>
     <string name="title2">meets health.</string>
     <string name="desc">Nice-looking body and powerful organism are interconnected - and we can help you with both.</string>
@@ -10,4 +10,5 @@
     <string name="facttitle">Did you know</string>
     <string name="fact">Regular exercise
 helps lower blood pressure and cholesterol levels. Two major risk factors for heart disease.</string>
+    <string name="select_workout">Select Workout</string>
 </resources>

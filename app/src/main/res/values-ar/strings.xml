@@ -7,4 +7,9 @@
     <string name="facttitle">هل كنت تعلم</string>
     <string name="fact">تمرين منتظم
 يساعد في خفض ضغط الدم ومستويات الكوليسترول. اثنين من أخطر العوامل الرئيسية لأمراض القلب.</string>
+
+    <string name="select_workout">اختار التمرين</string>
+    <string name="cardio" ><a href="https://www.youtube.com/watch?v=EDD4GxHVess">كارديو</a></string>
+    <string name="strength"><a href="https://www.youtube.com/watch?v=7DaE7pi5wfg">القوة</a></string>
+    <string name="flexibility" ><a href="https://www.youtube.com/watch?v=Ef6LwAaB3_E">المرونة</a></string>
 </resources>
