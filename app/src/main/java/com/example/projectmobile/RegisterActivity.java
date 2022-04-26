@@ -20,16 +20,6 @@ import android.widget.Toast;
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String LOG_TAG ="Key";
-    public static final String EXTRA_MESSAGE1=
-            "com.example.android.myapplication3.extra.MESSAGE";
-    public static final String EXTRA_MESSAGE2=
-            "com.example.android.myapplication3.extra.MESSAGE";
-    public static final String EXTRA_MESSAGE3=
-            "com.example.android.myapplication3.extra.MESSAGE";
-    public static final String EXTRA_MESSAGE4=
-            "com.example.android.myapplication3.extra.MESSAGE";
-    public static final String EXTRA_MESSAGE5=
-            "com.example.android.myapplication3.extra.MESSAGE";
     EditText name,age,height,weight;
     RadioGroup gender;
     ImageView image;
@@ -64,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode==RESULT_OK && requestCode==PICK_IMAGE){
+            assert data != null;
             imageUri=data.getData();
             Toast.makeText(this,"Image Uploaded",Toast.LENGTH_LONG).show();
             //image.setImageURI(imageUri);

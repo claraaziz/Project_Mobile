@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ProjectMobile">
         <activity
             android:name=".Workout1"
-            android:exported="false" />
+            android:exported="true" />
 
         <receiver
             android:name=".MyReciever"
@@ -38,9 +38,6 @@
             android:exported="true" />
         <activity
             android:name=".scheduleClasses"
-            android:exported="true" />
-        <activity
-            android:name=".Workout"
             android:exported="true" />
         <activity
             android:name=".classesDescription"

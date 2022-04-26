@@ -16,6 +16,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
+
 public class ProfileActivity extends AppCompatActivity {
 
     TextView n,a,w,h;

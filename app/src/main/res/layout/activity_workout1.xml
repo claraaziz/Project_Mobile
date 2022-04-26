@@ -14,16 +14,14 @@
 
     <TextView
         android:id="@+id/classes"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:paddingStart="20dp"
-        android:paddingTop="20dp"
+        android:layout_marginTop="50dp"
         android:text="@string/select_workout"
         android:textColor="#497cff"
-        android:layout_marginLeft="20dp"
         android:textSize="50sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,21 +75,20 @@
 
     <TextView
         android:id="@+id/hiit"
-        android:clickable="true"
         android:layout_width="330dp"
         android:layout_height="135dp"
         android:layout_marginTop="40dp"
         android:background="#d6d6d6"
+        android:clickable="true"
         android:gravity="center_vertical"
         android:paddingStart="15dp"
         android:text="@string/strength"
         android:textColor="@color/black"
+        android:textColorLink="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/yoga"
         app:layout_constraintStart_toStartOf="@+id/yoga"
-        app:layout_constraintTop_toBottomOf="@+id/yoga"
-        android:textColorLink="@color/black"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/yoga" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/hiitImg"
@@ -145,10 +142,9 @@
         android:id="@+id/share1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="190dp"
         app:layout_constraintBottom_toBottomOf="@+id/yoga"
-        app:layout_constraintEnd_toStartOf="@+id/yogaImg"
-        app:layout_constraintStart_toStartOf="@+id/yoga"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/yoga"
         app:srcCompat="@drawable/ic_share"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -157,10 +153,9 @@
         android:id="@+id/share2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
         app:layout_constraintBottom_toBottomOf="@+id/hiit"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.958"
-        app:layout_constraintStart_toStartOf="@+id/hiit"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/hiit"
         app:srcCompat="@drawable/ic_share"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -169,10 +164,9 @@
         android:id="@+id/share3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
         app:layout_constraintBottom_toBottomOf="@+id/boxing"
-        app:layout_constraintEnd_toStartOf="@+id/boxImg"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/boxing"
         app:srcCompat="@drawable/ic_share"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -184,17 +178,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:weightSum="80"
         android:layout_marginBottom="3dp"
-
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="10dp"
+        android:background="@color/black">
 
 
         <ImageView
             android:id="@+id/imageView3"
-
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
             android:layout_weight="20"
             android:onClick="ongohome"
             app:srcCompat="@drawable/home__1_"
@@ -202,7 +195,7 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="116dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_weight="20"
             android:onClick="ongogym"
@@ -211,7 +204,7 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="77dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
             android:layout_weight="20"
@@ -221,7 +214,7 @@
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="69dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_weight="20"
 

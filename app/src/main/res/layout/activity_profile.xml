@@ -27,13 +27,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:text="@string/network"
                 android:textColor="#ACACAC"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toBottomOf="@+id/w" />
 
 
             <RadioGroup
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/network">
@@ -50,29 +50,29 @@
                     android:id="@+id/noNetwork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:buttonTint="#3F53B5"
                     android:checked="true"
                     android:text="@string/none"
                     android:textColor="@color/white"
-                    android:textSize="22dp"
-                    android:buttonTint="#3F53B5"/>
+                    android:textSize="22dp" />
 
                 <RadioButton
                     android:id="@+id/anyNetwork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:buttonTint="#3F53B5"
                     android:text="@string/any"
                     android:textColor="@color/white"
-                    android:textSize="22dp"
-                    android:buttonTint="#3F53B5"/>
+                    android:textSize="22dp" />
 
                 <RadioButton
                     android:id="@+id/wifiNetwork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:buttonTint="#3F53B5"
                     android:text="@string/wifi"
                     android:textColor="@color/white"
-                    android:textSize="22dp"
-                    android:buttonTint="#3F53B5"/>
+                    android:textSize="22dp" />
             </RadioGroup>
 
             <Switch
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:minHeight="48dp"
                 android:text="@string/idle"
                 android:textColor="@color/white"
@@ -104,7 +104,7 @@
                 android:id="@+id/chargingSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:minHeight="48dp"
                 android:text="@string/charging"
                 android:textColor="@color/white"
@@ -118,10 +118,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="50dp"
                 android:backgroundTint="#ACACAC"
                 android:onClick="scheduleJob"
                 android:text="@string/scheduleJob"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
@@ -130,7 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="50dp"
                 android:gravity="bottom"
                 android:text="@string/hello"
                 android:textColor="#3F53B5"
@@ -144,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="50dp"
                 android:gravity="bottom"
                 android:text="Name"
                 android:textColor="#3F53B5"
@@ -184,30 +186,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:progressTint="#3F53B5"
                 android:thumbTint="#3F53B5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/seekBarLabel" />
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="@string/classes"
-                android:textColor="#ACACAC"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/w" />
-
-            <TextView
                 android:id="@+id/w"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="144dp"
                 android:text="@string/kg"
                 android:textColor="@color/white"
@@ -221,7 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:text="@string/height"
                 android:textColor="#ACACAC"
                 android:textSize="25dp"
@@ -234,7 +223,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:text="@string/requires"
                 android:textColor="#ACACAC"
                 android:textSize="25dp"
@@ -247,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:text="@string/seekBarLabel"
                 android:textColor="#ACACAC"
                 android:textSize="25dp"
@@ -259,7 +248,7 @@
                 android:id="@+id/seekBarProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:text="@string/notSet"
                 android:textColor="@color/white"
                 android:textSize="25dp"
@@ -271,7 +260,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:text="@string/weight"
                 android:textColor="#ACACAC"
                 android:textSize="25dp"
@@ -283,7 +272,7 @@
                 android:id="@+id/h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="144dp"
                 android:text="@string/cm"
                 android:textColor="@color/white"
@@ -296,66 +285,65 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp"
                 android:backgroundTint="#3F53B5"
                 android:onClick="cancelJobs"
                 android:text="@string/cancelJobs"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/seekBar" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="80"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="10dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-        <ImageView
-            android:id="@+id/home"
-
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:layout_weight="20"
-            android:onClick="ongohome"
-            app:srcCompat="@drawable/home__1_"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageView
-            android:id="@+id/workout"
-            android:layout_width="116dp"
-            android:layout_height="match_parent"
-            android:layout_weight="20"
-            android:onClick="ongogym"
-            app:srcCompat="@drawable/ic_classes"
-            tools:ignore="UsingOnClickInXml" />
-
-        <ImageView
-            android:id="@+id/schedule"
-            android:layout_width="77dp"
-            android:layout_height="match_parent"
-
-            android:layout_weight="20"
-            android:onClick="ongosession"
-            app:srcCompat="@drawable/karate" />
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="69dp"
-            android:layout_height="match_parent"
-            android:layout_weight="20"
-
-            android:onClick="ongoprofile"
-
-            app:srcCompat="@drawable/user" />
-    </LinearLayout>
-
     </ScrollView>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="80"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingBottom="10dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:id="@+id/home"
+
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:onClick="ongohome"
+                    app:srcCompat="@drawable/home__1_"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/workout"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:onClick="ongogym"
+                    app:srcCompat="@drawable/ic_classes"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <ImageView
+                    android:id="@+id/schedule"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="20"
+                    android:onClick="ongosession"
+                    app:srcCompat="@drawable/karate" />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+
+                    android:onClick="ongoprofile"
+
+                    app:srcCompat="@drawable/user" />
+            </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
