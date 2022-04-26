@@ -1,272 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scheduleClasses"
+    android:background="@color/black"
     android:orientation="vertical">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true"
-    tools:ignore="SpeakableTextPresentCheck"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
+        android:id="@+id/classes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        android:clipToPadding="false"
-        android:paddingStart="0dp"
-        tools:context=".scheduleClasses"
-        tools:ignore="ExtraText">
+        android:layout_marginBottom="1dp"
+        android:gravity="bottom"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Classes"
+        android:textColor="#2196F3"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/classes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:paddingStart="20dp"
-            android:paddingTop="20dp"
-            android:text="Classes"
-            android:textColor="#2196F3"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="40dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="235dp" />
-
-        <TextView
-            android:id="@+id/yoga"
-            android:layout_width="330dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/border1"
-            android:gravity="center_vertical"
-            android:paddingStart="15dp"
-            android:text="Yoga class"
-            android:textColor="#F3EFEF"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/classes" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/yogaImg"
-            android:layout_width="110dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toBottomOf="@+id/yoga"
-            app:layout_constraintEnd_toEndOf="@+id/yoga"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/yoga"
-            app:layout_constraintTop_toTopOf="@+id/yoga"
-            app:layout_constraintVertical_bias="0.571"
-            android:src="@drawable/yoga" />
-
-        <TextView
-            android:id="@+id/hiit"
-            android:layout_width="330dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/border1"
-            android:gravity="center_vertical"
-            android:paddingStart="15dp"
-            android:text="HIIT class"
-            android:textColor="#F3EFEF"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="@+id/yoga"
-            app:layout_constraintStart_toStartOf="@+id/yoga"
-            app:layout_constraintTop_toBottomOf="@+id/yoga" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/hiitImg"
-            android:layout_width="110dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toBottomOf="@+id/hiit"
-            app:layout_constraintEnd_toEndOf="@+id/hiit"
-            app:layout_constraintStart_toStartOf="@+id/hiit"
-            app:layout_constraintTop_toTopOf="@+id/hiit"
-            android:src="@drawable/hiit"/>
-
-        <TextView
-            android:id="@+id/boxing"
-            android:layout_width="330dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/border1"
-            android:gravity="center_vertical"
-            android:paddingStart="15dp"
-            android:text="Boxing class"
-            android:textColor="#F3EFEF"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="@+id/hiit"
-            app:layout_constraintStart_toStartOf="@+id/hiit"
-            app:layout_constraintTop_toBottomOf="@+id/hiit" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/boxImg"
-            android:layout_width="110dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toBottomOf="@+id/boxing"
-            app:layout_constraintEnd_toEndOf="@+id/boxing"
-            app:layout_constraintStart_toStartOf="@+id/boxing"
-            app:layout_constraintTop_toTopOf="@+id/boxing"
-            app:layout_constraintVertical_bias="0.333"
-           android:src="@drawable/box" />
-
-        <TextView
-            android:id="@+id/zumba"
-            android:layout_width="330dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/border1"
-            android:gravity="center_vertical"
-            android:paddingStart="15dp"
-            android:text="Zumba class"
-            android:textColor="#F3EFEF"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="@+id/boxing"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/boxing"
-            app:layout_constraintTop_toBottomOf="@+id/boxing" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/zumbaImg"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toBottomOf="@+id/zumba"
-            app:layout_constraintEnd_toEndOf="@+id/zumba"
-            app:layout_constraintStart_toStartOf="@+id/zumba"
-            app:layout_constraintTop_toTopOf="@+id/zumba"
-            android:src="@drawable/zumba" />
-
-        <TextView
-            android:id="@+id/fitness"
-            android:layout_width="330dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="45dp"
-            android:background="@drawable/border1"
-            android:gravity="center_vertical"
-            android:paddingStart="15dp"
-            android:text="Fitness class"
-            android:textColor="#F3EFEF"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/zumba"
-            app:layout_constraintStart_toStartOf="@+id/zumba"
-            app:layout_constraintTop_toBottomOf="@+id/zumba" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/fitnessImg"
-            android:layout_width="110dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toBottomOf="@+id/fitness"
-            app:layout_constraintEnd_toEndOf="@+id/fitness"
-            app:layout_constraintStart_toStartOf="@+id/fitness"
-            app:layout_constraintTop_toTopOf="@+id/fitness"
-           android:src="@drawable/fitness"/><![CDATA[
-
-
-
-
-        />
-
-    ]]>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</ScrollView>
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="80"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/black"
-        android:layout_marginTop="-40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
-
-
-        <ImageView
-            android:id="@+id/home"
-
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_weight="20"
-            android:onClick="ongohome"
-            app:srcCompat="@drawable/home__1_"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageView
-            android:id="@+id/workout"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
-            android:layout_weight="20"
-            android:onClick="ongogym"
-            app:srcCompat="@drawable/ic_classes"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageView
-            android:id="@+id/schedule"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
-
-            android:layout_weight="20"
-            android:onClick="ongosession"
-            app:srcCompat="@drawable/karate__1_"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
-            android:layout_weight="20"
-
-            android:onClick="ongoprofile"
-
-            app:srcCompat="@drawable/ic_profile"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </LinearLayout>
-
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:weightSum="80"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:background="@color/black"-->
+<!--        android:layout_marginTop="-40dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        >-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/home"-->
+
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_weight="20"-->
+<!--            android:onClick="ongohome"-->
+<!--            app:srcCompat="@drawable/home__1_"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/workout"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="20"-->
+<!--            android:onClick="ongogym"-->
+<!--            app:srcCompat="@drawable/ic_classes"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/schedule"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            android:layout_weight="20"-->
+<!--            android:onClick="ongosession"-->
+<!--            app:srcCompat="@drawable/karate__1_"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/profile"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="20"-->
+
+<!--            android:onClick="ongoprofile"-->
+
+<!--            app:srcCompat="@drawable/ic_profile"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+<!--    </LinearLayout>-->
+
+

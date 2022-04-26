@@ -36,4 +36,21 @@ helps lower blood pressure and cholesterol levels. Two major risk factors for he
     <string name="requires">Requires:</string>
     <string name="seekBarLabel">Override Deadline: </string>
     <string name="notSet">Not Set</string>
+
+    <string-array name="classes_names">
+        <item>Yoga</item>
+        <item>HIIT</item>
+        <item>Boxing</item>
+        <item>Zumba</item>
+        <item>Fitness</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Yoga is an ancient and complex practice, rooted in Indian philosophy. It began as a spiritual practice but has become popular as a way of promoting physical and mental well-being,Help people quit smoking.</item>
+        <item>HIIT is a type of interval training exercise. It incorporates several rounds that alternate between several minutes of high intensity movements to significantly increase the heart rate to at least 80%.</item>
+        <item>Boxing (also known as "Western boxing" or "pugilism") is a combat sport in which two people, usually wearing protective gloves and other protective equipment such as hand wraps and mouthguards.</item>
+        <item>One of the first things you need to understand about Zumba is that the motto is literally “Ditch the workout—Join the party!” And yeah, that might sound like they’re not taking fitness super seriously.</item>
+        <item>The first fitness service powered by Apple Watch.11 workout types, including HIIT, Yoga, and Strength. And guided meditations . Stay motivated with real‑time metrics, like your heart rate, onscreen . New workouts every week.</item>
+    </string-array>
+
 </resources>
