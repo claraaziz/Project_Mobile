@@ -10,13 +10,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="700dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/sclview"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -296,7 +298,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/seekBar" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-            <LinearLayout
+           <!-- <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -344,6 +346,48 @@
                     android:onClick="ongoprofile"
 
                     app:srcCompat="@drawable/user" />
-            </LinearLayout>
+            </LinearLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sclview"
+        android:backgroundTint="@color/black"
+        >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/workout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/ic_workout" />
+
+        <ImageButton
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/ic_classes" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:srcCompat="@drawable/ic_user" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

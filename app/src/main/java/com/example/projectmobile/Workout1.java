@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Workout1 extends AppCompatActivity {
     ImageButton b1, b2, b3;
+    ImageView home, workout, schedule, profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,38 @@ public class Workout1 extends AppCompatActivity {
                 startActivity(Intent.createChooser(myIntent, "Share Using"));
             }
         });
+        home =  findViewById(R.id.home);
+        workout =  findViewById(R.id.workout);
+        schedule =  findViewById(R.id.schedule);
+        profile =  findViewById(R.id.profile);
+        workout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(Workout1.this, Workout1.class);
+                startActivity(workoutPage);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(Workout1.this, HomeActivity.class);
+                startActivity(workoutPage);
+            }
+        });
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent schedulePage = new Intent(Workout1.this, scheduleClasses.class);
+                startActivity(schedulePage);
+            }
+        });
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profilePage = new Intent(Workout1.this, ProfileActivity.class);
+                startActivity(profilePage);
+            }
+        });
     }
 
     private void setupHyperlink() {
@@ -66,22 +100,22 @@ public class Workout1 extends AppCompatActivity {
         TextView link3 = findViewById(R.id.boxing);
         link3.setMovementMethod(LinkMovementMethod.getInstance());
     }
-    public void ongohome(View view) {
-        Intent i =new Intent(this,HomeActivity.class);
-    }
-
-    public void ongogym(View view) {
-        Intent i =new Intent(this,Workout1.class);
-
-    }
-
-    public void ongosession(View view) {
-        Intent i =new Intent(this,scheduleClasses.class);
-    }
-
-    public void ongoprofile(View view) {
-        Intent i =new Intent(this,ProfileActivity.class);
-    }
+//    public void ongohome(View view) {
+//        Intent i =new Intent(this,HomeActivity.class);
+//    }
+//
+//    public void ongogym(View view) {
+//        Intent i =new Intent(this,Workout1.class);
+//
+//    }
+//
+//    public void ongosession(View view) {
+//        Intent i =new Intent(this,scheduleClasses.class);
+//    }
+//
+//    public void ongoprofile(View view) {
+//        Intent i =new Intent(this,ProfileActivity.class);
+//    }
 
 
 }

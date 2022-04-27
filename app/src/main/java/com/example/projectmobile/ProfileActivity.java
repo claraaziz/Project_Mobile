@@ -31,6 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final int JOB_ID = 0;
     Switch idle,charging;
     private SeekBar seekBar;
+    ImageView home, workout, schedule, profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,39 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
+            }
+        });
+        home =  findViewById(R.id.home);
+        workout =  findViewById(R.id.workout);
+        schedule =  findViewById(R.id.schedule);
+        profile =  findViewById(R.id.profile);
+
+        workout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(ProfileActivity.this, Workout1.class);
+                startActivity(workoutPage);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(ProfileActivity.this, HomeActivity.class);
+                startActivity(workoutPage);
+            }
+        });
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent schedulePage = new Intent(ProfileActivity.this, scheduleClasses.class);
+                startActivity(schedulePage);
+            }
+        });
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profilePage = new Intent(ProfileActivity.this, ProfileActivity.class);
+                startActivity(profilePage);
             }
         });
     }

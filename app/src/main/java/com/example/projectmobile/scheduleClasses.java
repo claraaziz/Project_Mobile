@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.projectmobile.R;
 
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 public class scheduleClasses extends AppCompatActivity {
     ArrayList<ClassesModel> classesModels = new ArrayList<>();
     int[] classesImages={R.drawable.yoga,R.drawable.hiit,R.drawable.box, R.drawable.zumba,R.drawable.fitness};
+    ImageView home, workout, schedule, profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,39 @@ public class scheduleClasses extends AppCompatActivity {
                 startActivity(intent);
 
 
+            }
+        });
+        home =  findViewById(R.id.home);
+        workout =  findViewById(R.id.workout);
+        schedule =  findViewById(R.id.schedule);
+        profile =  findViewById(R.id.profile);
+
+        workout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(scheduleClasses.this, Workout1.class);
+                startActivity(workoutPage);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent workoutPage = new Intent(scheduleClasses.this, HomeActivity.class);
+                startActivity(workoutPage);
+            }
+        });
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent schedulePage = new Intent(scheduleClasses.this, scheduleClasses.class);
+                startActivity(schedulePage);
+            }
+        });
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profilePage = new Intent(scheduleClasses.this, ProfileActivity.class);
+                startActivity(profilePage);
             }
         });
     }
