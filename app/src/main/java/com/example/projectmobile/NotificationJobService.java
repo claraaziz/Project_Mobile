@@ -47,8 +47,8 @@ public class NotificationJobService extends JobService {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder
                 (this, PRIMARY_CHANNEL_ID)
-                .setContentTitle("Job Service")
-                .setContentText("Your Job ran to completion!")
+                .setContentTitle("Stay healthy")
+                .setContentText("Don't forget to workout")
                 .setContentIntent(contentPendingIntent)
                 .setSmallIcon(android.R.drawable.ic_popup_reminder)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
