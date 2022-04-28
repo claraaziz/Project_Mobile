@@ -44,6 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
                 openGallery();
             }
         });
+        Log.d(LOG_TAG,"OnCreate");
     }
     public void openGallery(){
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
@@ -82,6 +83,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onPause();
         SharedPreferences sp = getSharedPreferences("MySharedPref",MODE_PRIVATE);
         SharedPreferences.Editor myEdit=sp.edit();
+
+        //Save preferences as (key,value)
         myEdit.putString("name",name.getText().toString());
         myEdit.putInt("age",Integer.parseInt(age.getText().toString()));
         myEdit.putInt("height",Integer.parseInt(height.getText().toString()));
@@ -89,12 +92,15 @@ public class RegisterActivity extends AppCompatActivity {
         myEdit.putInt("gender",gender.indexOfChild(findViewById(gender.getCheckedRadioButtonId())));
         myEdit.putString("image",imageUri.toString());
         myEdit.apply();
+        Log.d(LOG_TAG,"onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         SharedPreferences sh = getSharedPreferences("MySharedPref",MODE_PRIVATE);
+
+        //Restore preferences
         String s= sh.getString("name","");
         String imgUri=sh.getString("image","");
         int a = sh.getInt("age",0);
@@ -109,5 +115,30 @@ public class RegisterActivity extends AppCompatActivity {
         height.setText(String.valueOf(h));
         weight.setText(String.valueOf(w));
         imageUri=Uri.parse(imgUri);
+        Log.d(LOG_TAG,"onResume");
+    }
+    //Activity lifecycle
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG,"onStart");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG,"onRestart");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG,"onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG,"onDestroy");
     }
 }

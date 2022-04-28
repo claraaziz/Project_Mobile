@@ -88,25 +88,4 @@ public class scheduleClasses extends AppCompatActivity {
         }
     }
 
-
-
-
-                    //////////NAVBAR//////////
-//    public void ongohome(View view) {
-//        Intent i =new Intent(this,HomeActivity.class);
-//    }
-//
-//    public void ongogym(View view) {
-//        Intent i =new Intent(this,Workout1.class);
-//
-//    }
-//
-//    public void ongosession(View view) {
-//        Intent i =new Intent(this,scheduleClasses.class);
-//    }
-//
-//    public void ongoprofile(View view) {
-//        Intent i =new Intent(this,ProfileActivity.class);
-//    }
-
 }

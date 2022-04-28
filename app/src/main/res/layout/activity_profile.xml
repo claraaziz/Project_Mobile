@@ -298,55 +298,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/seekBar" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-           <!-- <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="80"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:paddingBottom="10dp"
-                android:background="@color/black">
 
-                <ImageView
-                    android:id="@+id/home"
-
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="20"
-                    android:onClick="ongohome"
-                    app:srcCompat="@drawable/home__1_"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:id="@+id/workout"
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:onClick="ongogym"
-                    app:srcCompat="@drawable/ic_classes"
-                    tools:ignore="UsingOnClickInXml" />
-
-                <ImageView
-                    android:id="@+id/schedule"
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-
-                    android:layout_weight="20"
-                    android:onClick="ongosession"
-                    app:srcCompat="@drawable/karate" />
-
-                <ImageView
-                    android:id="@+id/profile"
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-
-                    android:onClick="ongoprofile"
-
-                    app:srcCompat="@drawable/user" />
-            </LinearLayout> -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"

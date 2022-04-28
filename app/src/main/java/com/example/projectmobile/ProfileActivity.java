@@ -8,6 +8,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -32,6 +33,7 @@ public class ProfileActivity extends AppCompatActivity {
     Switch idle,charging;
     private SeekBar seekBar;
     ImageView home, workout, schedule, profile;
+    public static final String LOG_TAG ="Key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,8 @@ public class ProfileActivity extends AppCompatActivity {
         a.setText("     "+age+" years");
         h.setText("     "+height+" cm");
         w.setText("     "+weight+" kg");
+
+        //Updates the TextView with the value from the seekbar
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -111,6 +115,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(profilePage);
             }
         });
+        Log.d(LOG_TAG,"onCreate");
     }
     public void scheduleJob(View view){
         int seekBarInteger = seekBar.getProgress();
@@ -137,6 +142,8 @@ public class ProfileActivity extends AppCompatActivity {
         boolean constraintSet=(selectedNetworkOption!=JobInfo.NETWORK_TYPE_NONE)
                 || charging.isChecked()|| idle.isChecked()|| seekBarSet;
         if(constraintSet){
+
+            //Schedule the job and notify the user
             JobInfo myJobInfo= builder.build();
             mScheduler.schedule(myJobInfo);
             Toast.makeText(this, "Job Scheduled, job will run when " +
@@ -167,25 +174,37 @@ public class ProfileActivity extends AppCompatActivity {
             mScheduler = null;
         }
         super.onDestroy();
+        Log.d(LOG_TAG,"onDestroy");
+    }
+    //Activity lifecycle
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG,"onStart");
     }
 
-    public void ongohome(View view) {
-        Intent i =new Intent(this,HomeActivity.class);
-        startActivity(i);
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG,"onPause");
     }
 
-    public void ongogym(View view) {
-        Intent i =new Intent(this,Workout1.class);
-        startActivity(i);
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG,"onRestart");
     }
 
-    public void ongosession(View view) {
-        Intent i =new Intent(this,scheduleClasses.class);
-        startActivity(i);
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG,"onResume");
     }
 
-    public void ongoprofile(View view) {
-        Intent i =new Intent(this,ProfileActivity.class);
-        startActivity(i);
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG,"onStop");
     }
+
 }

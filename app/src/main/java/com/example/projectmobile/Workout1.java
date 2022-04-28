@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -14,6 +15,9 @@ import android.widget.TextView;
 public class Workout1 extends AppCompatActivity {
     ImageButton b1, b2, b3;
     ImageView home, workout, schedule, profile;
+    public static final String LOG_TAG ="Key";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +94,7 @@ public class Workout1 extends AppCompatActivity {
                 startActivity(profilePage);
             }
         });
+        Log.d(LOG_TAG,"onCreate");
     }
 
     private void setupHyperlink() {
@@ -100,22 +105,40 @@ public class Workout1 extends AppCompatActivity {
         TextView link3 = findViewById(R.id.boxing);
         link3.setMovementMethod(LinkMovementMethod.getInstance());
     }
-//    public void ongohome(View view) {
-//        Intent i =new Intent(this,HomeActivity.class);
-//    }
-//
-//    public void ongogym(View view) {
-//        Intent i =new Intent(this,Workout1.class);
-//
-//    }
-//
-//    public void ongosession(View view) {
-//        Intent i =new Intent(this,scheduleClasses.class);
-//    }
-//
-//    public void ongoprofile(View view) {
-//        Intent i =new Intent(this,ProfileActivity.class);
-//    }
+    //Activity lifecycle
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG,"onStart");
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG,"onPause");
+    }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG,"onRestart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG,"onResume");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG,"onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG,"onDestroy");
+    }
 }
